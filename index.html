@@ -31,26 +31,28 @@
             </div>
             <div class="flex justify-between items-center gap-8 text-base font-inter">
                 <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="/about.html">About</a>
+                <a href="#contact-form-section">Contact</a>
             </div>
         </nav>
         <!-- hero section -->
         <section class="flex justify-center items-center gap-20 w-4/5 mx-auto mt-7 mb-20">
             <div class="flex-1">
-                <h1 class="text-white text-8xl font-bebas-neue">HI, I AM<br>ROBERT GARCIA.</h1>
+                <h1 class="text-white text-5xl lg:text-8xl font-bebas-neue">HI, I AM<br>
+                    <div class="typing-demo">ROBERT GARCIA.</div>
+                </h1>
                 <p class="grey-font text-lg font-manrope mt-2 mb-10">A Sydney based front-end developer passionate about
-                    building
-                    accessible and
-                    user friendly websites.</p>
+                    building accessible and user friendly websites.</p>
                 <div class="flex justify-left items-center gap-4">
-                    <button
-                        class="btn bg-[#D3E97A] border-none rounded-full text-[#0A0A0A] font-manrope text-base font-bold py-7 px-8">CONTACT
-                        ME<svg class="ml-3" width="12" height="12" viewBox="0 0 10 10"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="5" cy="5" r="4" fill="black" />
-                        </svg>
-                    </button>
+                    <a href="#contact-form-section">
+                        <button
+                            class="btn bg-[#D3E97A] border-none rounded-full text-[#0A0A0A] font-manrope text-base font-bold py-7 px-8">CONTACT
+                            ME<svg class="ml-3" width="12" height="12" viewBox="0 0 10 10"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="5" cy="5" r="4" fill="black" />
+                            </svg>
+                        </button>
+                    </a>
                     <img src="assets/linkedin-icon.png" alt="">
                     <img src="assets/github-icon.png" alt="">
                 </div>
@@ -170,7 +172,7 @@
             <div class="flex-3">
                 <h2 class="text-white text-7xl font-bebas-neue">ABOUT ME</h2>
             </div>
-            <div class="flex-4">
+            <div class="flex-4 font-manrope">
                 <h3 class="text-3xl text-white font-medium">I am a front-end developer based in Sydney. Has Mechanical
                     Engineering background.</h3>
                 <p class="grey-font text-lg pt-4 pb-8">I am a front-end developer based in Sydney looking for exciting
@@ -183,9 +185,9 @@
                     ME</a>
             </div>
         </section>
-        <!-- form section -->
+        <!-- contact form section -->
         <div class="divider divider-accent pb-20"></div>
-        <section class="w-4/5 mx-auto flex justify-between items-top gap-6">
+        <section id="contact-form-section" class="w-4/5 mx-auto flex justify-between items-top gap-6">
             <div class="flex-1">
                 <h2 class="text-white text-7xl mb-2 font-bebas-neue">LET'S CONNECT</h2>
                 <p class="grey-font text-lg font-manrope mb-10">Say hello at robertgarcia@gmail.com<br>For more info,
@@ -199,18 +201,18 @@
             </div>
             <div class="flex-1">
                 <div class="flex flex-col font-manrope">
-                    <label class="grey-font mb-2" for="">Name</label>
-                    <input class="text-white bg-[#1A1A1A] border-none rounded-sm py-3 px-4 mb-6" type="text" name=""
+                    <label class="grey-font mb-2 text-base" for="">Name</label>
+                    <input class="text-white text-lg bg-[#1A1A1A] border-none rounded-sm py-3 px-4 mb-6" type="text" name=""
                         id="" placeholder="Your name">
-                    <label class="grey-font mb-2" for="">Email</label>
-                    <input class="text-white bg-[#1A1A1A] border-none rounded-sm py-3 px-4 mb-6" type="email" name=""
+                    <label class="grey-font mb-2 text-base" for="">Email</label>
+                    <input class="text-white text-lg bg-[#1A1A1A] border-none rounded-sm py-3 px-4 mb-6" type="email" name=""
                         id="" placeholder="Your email">
-                    <label class="grey-font mb-2" for="">Subject</label>
-                    <input class="text-white bg-[#1A1A1A] border-none rounded-sm py-3 px-4 mb-6" type="text" name=""
+                    <label class="grey-font mb-2 text-base" for="">Subject</label>
+                    <input class="text-white text-lg bg-[#1A1A1A] border-none rounded-sm py-3 px-4 mb-6" type="text" name=""
                         id="" placeholder="Subject">
-                    <label class="grey-font mb-2" for="">Message</label>
-                    <textarea class="text-white bg-[#1A1A1A] border-none rounded-sm py-3 px-4 mb-10" name="" id=""
-                        placeholder="Your message"></textarea>
+                    <label class="grey-font mb-2 text-base" for="">Message</label>
+                    <textarea class="text-white text-lg bg-[#1A1A1A] border-none rounded-sm py-3 px-4 mb-10" name="" id=""
+                        placeholder="Your message" rows="5"></textarea>
                 </div>
                 <button
                     class="btn bg-[#D3E97A] border-none rounded-full text-[#0A0A0A] font-manrope text-base font-bold py-7 px-8">SUBMIT</button>
@@ -221,6 +223,16 @@
     <footer class="w-4/5 mx-auto pb-20">
         <p class="grey-font">© 2023 Robert Garcia</p>
     </footer>
+
+    <script src="js/home.js"></script>
 </body>
 
 </html>
+
+
+<!-- typing animation source html -->
+<!-- <div class="wrapper">
+    <div class="typing-demo">
+        This is a typing demo.
+    </div>
+</div> -->
