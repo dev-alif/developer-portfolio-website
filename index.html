@@ -24,21 +24,31 @@
 
 <body class="bg-[#0A0A0A]">
     <header>
-        <nav class="flex justify-between items-center grey-font py-6 px-15">
+        <nav class="flex justify-between items-center grey-font py-6 px-4 lg:px-15">
             <!-- <a href="#"><div class="grey-font">ROBERT GARCIA</div></a> -->
             <div class="text-3xl font-bebas-neue">
                 <a href="#">ROBERT GARCIA</a>
             </div>
-            <div class="flex justify-between items-center gap-8 text-base font-inter">
+            <div class="hidden lg:flex justify-between items-center gap-8 text-base font-inter">
                 <a href="#">Home</a>
                 <a href="/about.html">About</a>
                 <a href="#contact-form-section">Contact</a>
             </div>
+            <img id="hamburger-menu" class="lg:hidden" src="assets/hamburger-icon.png" alt="">
         </nav>
+
+        <!-- hamburger dropdown -->
+        <div id="hamburger-dropdown" class="hidden text-white font-inter flex flex-col gap-4 px-4">
+            <a href="#">Home</a>
+            <a href="/about.html">About</a>
+            <a href="#contact-form-section">Contact</a>
+        </div>
+
         <!-- hero section -->
-        <section class="flex justify-center items-center gap-20 w-4/5 mx-auto mt-7 mb-20">
+        <section
+            class="flex flex-col lg:flex-row justify-center items-center gap-20 w-9/10 lg:w-4/5 mx-auto mt-7 mb-20">
             <div class="flex-1">
-                <h1 class="text-white text-5xl lg:text-8xl font-bebas-neue">HI, I AM<br>
+                <h1 class="text-white text-6xl lg:text-8xl font-bebas-neue">HI, I AM<br>
                     <div class="typing-demo">ROBERT GARCIA.</div>
                 </h1>
                 <p class="grey-font text-lg font-manrope mt-2 mb-10">A Sydney based front-end developer passionate about
@@ -66,16 +76,16 @@
 
     <main>
         <!-- featured projects section -->
-        <section class="w-4/5 mx-auto">
-            <h2 class="text-white text-7xl mb-2 mt-20 font-bebas-neue">FEATURED PROJECTS</h2>
+        <section class="w-9/10 lg:w-4/5 mx-auto">
+            <h2 class="text-white text-5xl lg:text-7xl mb-2 mt-20 font-bebas-neue">FEATURED PROJECTS</h2>
             <p class="grey-font text-lg font-manrope">Here are some of the selected projects that showcase my passion
                 for front-end development.</p>
             <!-- project row 1 -->
-            <div class="flex justify-center items-center mt-20">
+            <div class="flex flex-col lg:flex-row justify-center items-center mt-20">
                 <div class="flex-1">
                     <img src="assets/project-row-1.png" alt="" class="w-full">
                 </div>
-                <div class="flex-1 py-15 pl-12 font-manrope">
+                <div class="flex-1 py-15 lg:pl-12 font-manrope">
                     <h3 class="text-3xl text-white font-medium">Promotional landing page for our favorite
                         show</h3>
                     <p class="grey-font text-lg pt-4 pb-8">Teamed up with a designer to breathe life into a promotional
@@ -104,11 +114,11 @@
                 </div>
             </div>
             <!-- project row 2 -->
-            <div class="flex justify-center items-center mt-20">
+            <div class="flex flex-col lg:flex-row justify-center items-center mt-20">
                 <div class="flex-1">
                     <img src="assets/project-row-2.png" alt="" class="w-full">
                 </div>
-                <div class="flex-1 py-15 pl-12 font-manrope">
+                <div class="flex-1 py-15 lg:pl-12 font-manrope">
                     <h3 class="text-3xl text-white font-medium">Blog site for World News</h3>
                     <p class="grey-font text-lg pt-4 pb-8">Mastered CSS Grid complexities in building an innovative news
                         homepage, navigating intricate design decisions for a seamless user experience. Leveraged the
@@ -136,11 +146,11 @@
                 </div>
             </div>
             <!-- project row 3 -->
-            <div class="flex justify-center items-center my-20">
+            <div class="flex flex-col lg:flex-row justify-center items-center my-20">
                 <div class="flex-1">
                     <img src="assets/project-row-3.png" alt="" class="w-full">
                 </div>
-                <div class="flex-1 py-15 pl-12 font-manrope">
+                <div class="flex-1 py-15 lg:pl-12 font-manrope">
                     <h3 class="text-3xl text-white font-medium">E-commerce product page</h3>
                     <p class="grey-font text-lg pt-4 pb-8">Successfully crafted an engaging product page featuring a
                         dynamic lightbox gallery and seamless cart functionality, showcasing proficiency in JavaScript
@@ -168,12 +178,12 @@
         </section>
         <div class="divider divider-accent mb-30"></div>
         <!-- about section -->
-        <section class="w-4/5 mx-auto flex justify-center items-top pb-98">
+        <section class="w-9/10 lg:w-4/5 mx-auto flex flex-col lg:flex-row justify-center items-top pb-20 lg:pb-98 space-y-8">
             <div class="flex-3">
-                <h2 class="text-white text-7xl font-bebas-neue">ABOUT ME</h2>
+                <h2 class="text-white text-5xl lg:text-7xl font-bebas-neue">ABOUT ME</h2>
             </div>
             <div class="flex-4 font-manrope">
-                <h3 class="text-3xl text-white font-medium">I am a front-end developer based in Sydney. Has Mechanical
+                <h3 class="text-2xl lg:text-3xl text-white font-medium">I am a front-end developer based in Sydney. Has Mechanical
                     Engineering background.</h3>
                 <p class="grey-font text-lg pt-4 pb-8">I am a front-end developer based in Sydney looking for exciting
                     opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when
@@ -187,9 +197,9 @@
         </section>
         <!-- contact form section -->
         <div class="divider divider-accent pb-20"></div>
-        <section id="contact-form-section" class="w-4/5 mx-auto flex justify-between items-top gap-6">
+        <section id="contact-form-section" class="w-9/10 lg:w-4/5 mx-auto flex flex-col lg:flex-row justify-between items-top gap-6 space-y-12">
             <div class="flex-1">
-                <h2 class="text-white text-7xl mb-2 font-bebas-neue">LET'S CONNECT</h2>
+                <h2 class="text-white text-5xl lg:text-7xl mb-2 font-bebas-neue">LET'S CONNECT</h2>
                 <p class="grey-font text-lg font-manrope mb-10">Say hello at robertgarcia@gmail.com<br>For more info,
                     here's my resume</p>
                 <div class="flex gap-6">
@@ -202,17 +212,17 @@
             <div class="flex-1">
                 <div class="flex flex-col font-manrope">
                     <label class="grey-font mb-2 text-base" for="">Name</label>
-                    <input class="text-white text-lg bg-[#1A1A1A] border-none rounded-sm py-3 px-4 mb-6" type="text" name=""
-                        id="" placeholder="Your name">
+                    <input class="text-white text-lg bg-[#1A1A1A] border-none rounded-sm py-3 px-4 mb-6" type="text"
+                        name="" id="" placeholder="Your name">
                     <label class="grey-font mb-2 text-base" for="">Email</label>
-                    <input class="text-white text-lg bg-[#1A1A1A] border-none rounded-sm py-3 px-4 mb-6" type="email" name=""
-                        id="" placeholder="Your email">
+                    <input class="text-white text-lg bg-[#1A1A1A] border-none rounded-sm py-3 px-4 mb-6" type="email"
+                        name="" id="" placeholder="Your email">
                     <label class="grey-font mb-2 text-base" for="">Subject</label>
-                    <input class="text-white text-lg bg-[#1A1A1A] border-none rounded-sm py-3 px-4 mb-6" type="text" name=""
-                        id="" placeholder="Subject">
+                    <input class="text-white text-lg bg-[#1A1A1A] border-none rounded-sm py-3 px-4 mb-6" type="text"
+                        name="" id="" placeholder="Subject">
                     <label class="grey-font mb-2 text-base" for="">Message</label>
-                    <textarea class="text-white text-lg bg-[#1A1A1A] border-none rounded-sm py-3 px-4 mb-10" name="" id=""
-                        placeholder="Your message" rows="5"></textarea>
+                    <textarea class="text-white text-lg bg-[#1A1A1A] border-none rounded-sm py-3 px-4 mb-10" name=""
+                        id="" placeholder="Your message" rows="5"></textarea>
                 </div>
                 <button
                     class="btn bg-[#D3E97A] border-none rounded-full text-[#0A0A0A] font-manrope text-base font-bold py-7 px-8">SUBMIT</button>
@@ -220,11 +230,11 @@
         </section>
     </main>
 
-    <footer class="w-4/5 mx-auto pb-20">
+    <footer class="w-9/10 lg:w-4/5 mx-auto py-20">
         <p class="grey-font">© 2023 Robert Garcia</p>
     </footer>
 
-    <script src="js/home.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
