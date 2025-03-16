@@ -45,23 +45,21 @@
         </div>
 
         <!-- hero section -->
-        <section class="w-9/10 lg:w-4/5 mx-auto flex flex-col lg:flex-row justify-center items-top mt-7 lg:pt-40 pb-30 space-y-8">
+        <section
+            class="w-9/10 lg:w-4/5 mx-auto flex flex-col lg:flex-row justify-center items-top mt-7 lg:pt-40 pb-30 space-y-8">
             <div class="flex-3">
                 <h1 class="text-white text-5xl lg:text-8xl font-bebas-neue">ABOUT ME</h1>
             </div>
             <div class="flex-4">
                 <h3 class="text-2xl lg:text-3xl text-white font-medium font-manrope">I am a front-end developer based in
-                    Sydney.<br>Has
-                    Mechanical
-                    Engineering background.</h3>
+                    Sydney.<br>Has Mechanical Engineering background.</h3>
                 <p class="grey-font text-lg pt-4 pb-8 font-manrope">I am a front-end developer based in Sydney looking
-                    for exciting
-                    opportunities. Has Mechanical Engineering background. Likes to focus on accessibility when
-                    developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs, Webflow
-                    and a bit of Designing. While I am not programming, I enjoy playing football, photography and
-                    playing Valorant. Learning more to improve skill.</p>
+                    for exciting opportunities. Has Mechanical Engineering background. Likes to focus on accessibility
+                    when developing. Passionate and curious about solving problems. Currently, I’m exploring Reactjs,
+                    Webflow and a bit of Designing. While I am not programming, I enjoy playing football, photography
+                    and playing Valorant. Learning more to improve skill.</p>
                 <div class="flex justify-left items-center gap-4">
-                    <a href="#contact-form-section">
+                    <a href="assets/file-sample_150kB.pdf" target="_blank" download>
                         <button
                             class="btn bg-[#D3E97A] border-none rounded-full text-[#0A0A0A] font-manrope text-base font-bold py-7 px-8">DOWNLOAD
                             RESUME<svg class="ml-3" width="12" height="12" viewBox="0 0 10 10"
@@ -70,8 +68,8 @@
                             </svg>
                         </button>
                     </a>
-                    <img src="assets/linkedin-icon.png" alt="">
-                    <img src="assets/github-icon.png" alt="">
+                    <a href="https://www.linkedin.com/in/al-amin-alif/"><img src="assets/linkedin-icon.png" alt="" target="_blank"></a>
+                    <a href="https://github.com/dev-alif"><img src="assets/github-icon.png" alt="" target="_blank"></a>
                 </div>
             </div>
         </section>
@@ -79,35 +77,35 @@
 
     <main>
         <!-- image section -->
-        <section class="w-4/5 mx-auto">
+        <section class="w-9/10 lg:w-4/5 mx-auto">
             <img class="w-full" src="assets/full-width-about-image.png" alt="">
         </section>
 
         <!-- skills section -->
-        <section class="w-4/5 mx-auto py-20 mt-10">
-            <div class="flex justify-center items-top">
+        <section class="w-9/10 lg:w-4/5 mx-auto py-20 mt-10">
+            <div class="flex flex-col lg:flex-row justify-center items-top space-y-8">
                 <div class="flex-1">
-                    <h2 class="text-white text-7xl font-bebas-neue">MY SKILLS</h2>
+                    <h2 class="text-white text-5xl lg:text-7xl font-bebas-neue">MY SKILLS</h2>
                 </div>
                 <div class="flex-1 font-manrope">
-                    <p class="grey-font text-lg pb-8">I am always looking to add more skills.Morbi egestas neque eu
+                    <p id="skill-description" class="grey-font text-lg pb-8">I am always looking to add more skills.Morbi egestas neque eu
                         blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at purus faucibus tristique ut
                         et dolor. </p>
                     <div class="flex flex-wrap gap-4">
                         <button
-                            class="btn bg-transparent border-[#C7C7C7] rounded-full text-white text-base font-bold py-5 px-8">HTML</button>
+                            class="btn bg-transparent border-[#C7C7C7] rounded-full text-white text-base font-bold py-5 px-8" id="skill-html">HTML</button>
                         <button
-                            class="btn bg-transparent border-[#C7C7C7] rounded-full text-white text-base font-bold py-5 px-8">CSS</button>
+                            class="btn bg-transparent border-[#C7C7C7] rounded-full text-white text-base font-bold py-5 px-8" id="skill-css">CSS</button>
                         <button
-                            class="btn bg-transparent border-[#C7C7C7] rounded-full text-white text-base font-bold py-5 px-8">JAVASCRIPT</button>
+                            class="btn bg-transparent border-[#C7C7C7] rounded-full text-white text-base font-bold py-5 px-8" id="skill-js">JAVASCRIPT</button>
                         <button
-                            class="btn bg-transparent border-[#C7C7C7] rounded-full text-white text-base font-bold py-5 px-8">JQUERY</button>
+                            class="btn bg-transparent border-[#C7C7C7] rounded-full text-white text-base font-bold py-5 px-8" id="skill-jquery">JQUERY</button>
                         <button
-                            class="btn bg-transparent border-[#C7C7C7] rounded-full text-white text-base font-bold py-5 px-8">ACCESSIBILITY</button>
+                            class="btn bg-transparent border-[#C7C7C7] rounded-full text-white text-base font-bold py-5 px-8" id="skill-accessibility">ACCESSIBILITY</button>
                         <button
-                            class="btn bg-transparent border-[#C7C7C7] rounded-full text-white text-base font-bold py-5 px-8">FIGMA</button>
+                            class="btn bg-transparent border-[#C7C7C7] rounded-full text-white text-base font-bold py-5 px-8" id="skill-figma">FIGMA</button>
                         <button
-                            class="btn bg-transparent border-[#C7C7C7] rounded-full text-white text-base font-bold py-5 px-8">TAILWIND
+                            class="btn bg-transparent border-[#C7C7C7] rounded-full text-white text-base font-bold py-5 px-8" id="skill-tailwind">TAILWIND
                             CSS</button>
                     </div>
                 </div>
@@ -115,21 +113,21 @@
         </section>
         <div class="divider divider-accent"></div>
 
-        <!-- experience section -->
-        <section class="w-4/5 mx-auto py-20 mt-10">
-            <div class="flex justify-center items-top">
+        <!-- featured projects section -->
+        <section class="w-9/10 lg:w-4/5 mx-auto py-20 mt-10">
+            <div class="flex flex-col lg:flex-row justify-center items-top space-y-8">
                 <div class="flex-1">
-                    <h2 class="text-white text-7xl font-bebas-neue">FEATURED PROJECTS</h2>
+                    <h2 class="text-white text-5xl lg:text-7xl font-bebas-neue">FEATURED PROJECTS</h2>
                 </div>
                 <div class="flex-1 font-manrope">
-                    <div class="flex justify-between items-center">
+                    <div class="flex flex-col lg:flex-row justify-between items-left lg:items-center space-y-2">
                         <h3 class="text-white text-2xl font-medium">Freelance Developer</h3>
                         <p class="grey-font text-lg text-base">Nov 2023 - Present</p>
                     </div>
                     <p class="grey-font text-lg pb-8 mt-4 text-justify">Ullamco laboris nisi ut aliquip ex ea commodo
                         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                         fugiat nulla pariatur.</p>
-                    <div class="flex justify-between items-center">
+                    <div class="flex flex-col lg:flex-row justify-between items-left lg:items-center space-y-2">
                         <h3 class="text-white text-2xl font-medium">Frontend Intern</h3>
                         <p class="grey-font text-lg text-base">Sep 2023 - Nov 2023</p>
                     </div>
@@ -143,9 +141,10 @@
         <div class="divider divider-accent pb-30"></div>
 
         <!-- contact form section -->
-        <section id="contact-form-section" class="w-4/5 mx-auto flex justify-between items-top gap-6">
+        <section id="contact-form-section"
+            class="w-9/10 lg:w-4/5 mx-auto flex flex-col lg:flex-row justify-between items-top gap-6 space-y-8">
             <div class="flex-1">
-                <h2 class="text-white text-7xl mb-2 font-bebas-neue">LET'S CONNECT</h2>
+                <h2 class="text-white text-5xl lg:text-7xl mb-2 font-bebas-neue">LET'S CONNECT</h2>
                 <p class="grey-font text-lg font-manrope mb-10">Say hello at robertgarcia@gmail.com<br>For more info,
                     here's my resume</p>
                 <div class="flex gap-6">
@@ -176,11 +175,12 @@
         </section>
     </main>
 
-    <footer class="w-4/5 mx-auto pb-20">
+    <footer class="w-9/10 lg:w-4/5 mx-auto py-20">
         <p class="grey-font">© 2023 Robert Garcia</p>
     </footer>
 
     <script src="js/scripts.js"></script>
+    <script src="js/skills.js"></script>
 </body>
 
 </html>
